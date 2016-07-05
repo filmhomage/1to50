@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B924866B1D2A842A00D05B07 /* Array+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924866A1D2A842A00D05B07 /* Array+Shuffle.swift */; };
 		B9D40BF31D26791F0010EBCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D40BF21D26791F0010EBCE /* AppDelegate.swift */; };
 		B9D40BF51D26791F0010EBCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D40BF41D26791F0010EBCE /* ViewController.swift */; };
 		B9D40BF81D26791F0010EBCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D40BF61D26791F0010EBCE /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B924866A1D2A842A00D05B07 /* Array+Shuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Shuffle.swift"; sourceTree = "<group>"; };
 		B9D40BEF1D26791F0010EBCE /* oneTo50.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oneTo50.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D40BF21D26791F0010EBCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9D40BF41D26791F0010EBCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				B9D40BF21D26791F0010EBCE /* AppDelegate.swift */,
 				B9D40BF41D26791F0010EBCE /* ViewController.swift */,
+				B924866A1D2A842A00D05B07 /* Array+Shuffle.swift */,
 				B9D40BF61D26791F0010EBCE /* Main.storyboard */,
 				B9D40BF91D26791F0010EBCE /* Assets.xcassets */,
 				B9D40BFB1D26791F0010EBCE /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B924866B1D2A842A00D05B07 /* Array+Shuffle.swift in Sources */,
 				B9D40BF51D26791F0010EBCE /* ViewController.swift in Sources */,
 				B9D40BF31D26791F0010EBCE /* AppDelegate.swift in Sources */,
 			);
@@ -288,6 +292,7 @@
 				B9D40C031D26791F0010EBCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
