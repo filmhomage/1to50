@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B924866B1D2A842A00D05B07 /* Array+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924866A1D2A842A00D05B07 /* Array+Shuffle.swift */; };
+		B9BDF5D61D2E8B0F00E6B170 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BDF5D51D2E8B0F00E6B170 /* GameKit.framework */; };
+		B9BDF5D91D2E8B6100E6B170 /* GKLocalPlayerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BDF5D81D2E8B6100E6B170 /* GKLocalPlayerUtil.swift */; };
+		B9BDF5DB1D2E8B6F00E6B170 /* GKScoreUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BDF5DA1D2E8B6F00E6B170 /* GKScoreUtil.swift */; };
 		B9D40BF31D26791F0010EBCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D40BF21D26791F0010EBCE /* AppDelegate.swift */; };
 		B9D40BF51D26791F0010EBCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D40BF41D26791F0010EBCE /* ViewController.swift */; };
 		B9D40BF81D26791F0010EBCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D40BF61D26791F0010EBCE /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		B924866A1D2A842A00D05B07 /* Array+Shuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Shuffle.swift"; sourceTree = "<group>"; };
+		B9BDF5D51D2E8B0F00E6B170 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		B9BDF5D81D2E8B6100E6B170 /* GKLocalPlayerUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GKLocalPlayerUtil.swift; path = GameKit/GKLocalPlayerUtil.swift; sourceTree = "<group>"; };
+		B9BDF5DA1D2E8B6F00E6B170 /* GKScoreUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKScoreUtil.swift; sourceTree = "<group>"; };
 		B9D40BEF1D26791F0010EBCE /* oneTo50.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oneTo50.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D40BF21D26791F0010EBCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9D40BF41D26791F0010EBCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,15 +37,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9BDF5D61D2E8B0F00E6B170 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9BDF5D71D2E8B3D00E6B170 /* GameKit */ = {
+			isa = PBXGroup;
+			children = (
+				B9BDF5D81D2E8B6100E6B170 /* GKLocalPlayerUtil.swift */,
+				B9BDF5DA1D2E8B6F00E6B170 /* GKScoreUtil.swift */,
+			);
+			name = GameKit;
+			sourceTree = "<group>";
+		};
 		B9D40BE61D26791F0010EBCE = {
 			isa = PBXGroup;
 			children = (
+				B9BDF5D51D2E8B0F00E6B170 /* GameKit.framework */,
 				B9D40BF11D26791F0010EBCE /* oneTo50 */,
 				B9D40BF01D26791F0010EBCE /* Products */,
 			);
@@ -63,6 +80,7 @@
 				B9D40BF91D26791F0010EBCE /* Assets.xcassets */,
 				B9D40BFB1D26791F0010EBCE /* LaunchScreen.storyboard */,
 				B9D40BFE1D26791F0010EBCE /* Info.plist */,
+				B9BDF5D71D2E8B3D00E6B170 /* GameKit */,
 			);
 			path = oneTo50;
 			sourceTree = "<group>";
@@ -140,6 +158,8 @@
 			files = (
 				B924866B1D2A842A00D05B07 /* Array+Shuffle.swift in Sources */,
 				B9D40BF51D26791F0010EBCE /* ViewController.swift in Sources */,
+				B9BDF5D91D2E8B6100E6B170 /* GKLocalPlayerUtil.swift in Sources */,
+				B9BDF5DB1D2E8B6F00E6B170 /* GKScoreUtil.swift in Sources */,
 				B9D40BF31D26791F0010EBCE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
