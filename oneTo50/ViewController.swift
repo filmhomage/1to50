@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GameKit
 
 class ViewController: UIViewController {
 
@@ -61,6 +62,27 @@ class ViewController: UIViewController {
         
         if self.starButton.titleLabel?.text == "start" {
             self.didTapStartButton(self.starButton)
+        }
+    }
+    
+    func confirmScore() {
+
+        let localPlayer = GKLocalPlayer()
+        let navigationController = self.view?.window?.rootViewController as! UINavigationController
+        
+        if let vc = navigationController.visibleViewController as? ViewController {
+            
+            localPlayer.loadDefaultLeaderboardIdentifierWithCompletionHandler({ (leaderboardIdentifier : String?, error : NSError?) -> Void in
+                if error != nil {
+                    print(error!.localizedDescription)
+                } else {
+                    let gameCenterController:GKGameCenterViewController = GKGameCenterViewController()
+//                    gameCenterController.gameCenterDelegate = vc
+                    gameCenterController.viewState = GKGameCenterViewControllerState.Leaderboards
+                    gameCenterController.leaderboardIdentifier = "score"
+                    vc.presentViewController(gameCenterController, animated: true, completion: nil)
+                }
+            })
         }
     }
 }
